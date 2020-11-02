@@ -5,17 +5,15 @@ function myFunction() {
 
 
 var underMenu = ["HOME", "ABOUT", "SERVICES"];
+
 function transitionHome() {
     document.getElementById("transitionText").innerHTML = underMenu[0];  
-    console.log(underMenu);
 }
 function transitionAbout() {
     document.getElementById("transitionText").innerHTML = underMenu[1];  
-    console.log(underMenu);
 }
 function transitionServices() {
     document.getElementById("transitionText").innerHTML = underMenu[2];  
-    console.log(underMenu);
 }
 
 window.onload = () => {

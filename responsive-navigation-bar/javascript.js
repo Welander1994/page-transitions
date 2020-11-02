@@ -4,7 +4,19 @@ function myFunction() {
 }
 
 
-
+var underMenu = ["HOME", "ABOUT", "SERVICES"];
+function transitionHome() {
+    document.getElementById("transitionText").innerHTML = underMenu[0];  
+    console.log(underMenu);
+}
+function transitionAbout() {
+    document.getElementById("transitionText").innerHTML = underMenu[1];  
+    console.log(underMenu);
+}
+function transitionServices() {
+    document.getElementById("transitionText").innerHTML = underMenu[2];  
+    console.log(underMenu);
+}
 
 window.onload = () => {
     const  transition_el = document.querySelector(".transition")
@@ -12,7 +24,8 @@ window.onload = () => {
 
     setTimeout(() => {
         transition_el.classList.remove("is-active");
-        
+
+   
     }, 700);
 
     for (let i = 0; i < anchors.length; i++) {
@@ -30,8 +43,8 @@ window.onload = () => {
     });
     }
 
-    var name = ["HOME", "ABOUT", "SERVICES"];
-    document.getElementById("Home").innerHTML = name[0];
+
+    
 
 }
 

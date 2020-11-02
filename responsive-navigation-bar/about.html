@@ -16,9 +16,9 @@
 
         <nav id="toggle">
             <ul>
-                <li><a href="/responsive-navigation-bar/index.html" >Home</a></li>
-                <li><a href="/responsive-navigation-bar/about.html" class="active">About</a></li>
-                <li><a href="/responsive-navigation-bar/services.html">Services</a></li>
+                <li><a href="/responsive-navigation-bar/index.html" onclick="transitionHome()">Home</a></li>
+                <li><a href="/responsive-navigation-bar/about.html"  onclick="transitionAbout()" class="active">About</a></li>
+                <li><a href="/responsive-navigation-bar/services.html" onclick="transitionServices()">Services</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
@@ -28,7 +28,9 @@
     </header>
 
     <div class="transition transition-1 is-active">
-       
+        
+        <h1 id="transitionText">about</h1>
+
     </div>
 
     <div class="content">

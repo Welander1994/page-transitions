@@ -16,9 +16,9 @@
 
         <nav id="toggle">
             <ul>
-                <li><a href="/responsive-navigation-bar/index.html">Home</a></li>
-                <li><a href="/responsive-navigation-bar/about.html">About</a></li>
-                <li><a href="/responsive-navigation-bar/services.html" class="active">Services</a></li>
+                <li><a href="/responsive-navigation-bar/index.html" onclick="transitionHome()">Home</a></li>
+                <li><a href="/responsive-navigation-bar/about.html"  onclick="transitionAbout()">About</a></li>
+                <li><a href="/responsive-navigation-bar/services.html" onclick="transitionServices()" class="active">Services</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
@@ -27,8 +27,8 @@
         <div class="menu-toggle" onclick="myFunction()"><i class="fas fa-bars"></i></div>
     </header>
 
-    <div class="transition transition-1 is-active">
-        
+    <div class="transition transition-1 is-active"> 
+        <h1 id="transitionText">services</h1>
     </div>
     
 

@@ -39,10 +39,7 @@ window.onload = () => {
             window.location.href = target;
         }, 700)
     });
-    }
-
-
-    
+    }  
 
 }
 
